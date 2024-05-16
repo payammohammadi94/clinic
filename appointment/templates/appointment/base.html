@@ -1,32 +1,62 @@
 {% load static %}
 <!DOCTYPE html>
+<link rel="icon" type="image/png" href="{% static '/images/icons/favicon.ico' %} "/>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="{% static '/images/icons/favicon.ico' %} "/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static 'appointment/css/style.css' %}">
-<!--===============================================================================================-->
-    <link rel="stylesheet" href="{% static '/appointment/css/style.css' %}">
+     <!-- basic -->
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <!-- mobile metas -->
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+   <!-- site metas -->
+   
+   <meta name="keywords" content="">
+   <meta name="description" content="">
+   <meta name="author" content="">
+
+   <!-- bootstrap css -->
+   
+   <link rel="stylesheet" href="{% static 'appointment/css/bootstrap.min.css' %} ">
+   <!-- style css -->
+   <link rel="stylesheet" href="{% static 'appointment/css/style.css' %} ">
+   
+   <!-- Responsive-->
+   <link rel="stylesheet" href="{% static 'appointment/css/responsive.css' %} ">
+   
+   <!-- fevicon -->
+   <link rel="icon" href="images/fevicon.png" type="image/gif" />
+   <!-- Scrollbar Custom CSS -->
+   <link rel="stylesheet" href="{% static 'appointment/css/jquery.mCustomScrollbar.min.css' %} ">
+   <!-- Tweaks for older IEs-->
+   <link rel="stylesheet" href="{% static 'appointment/css/font-awesome.css' %}">
+   <!-- owl stylesheets -->
+   <link rel="stylesheet" href="{% static 'appointment/css/owl.carousel.min.css' %} ">
+   <link rel="stylesheet" href="{% static 'appointment/css/owl.theme.default.min.css' %} ">
+   
+   
+   <link rel="stylesheet" href="{% static 'appointment/css/jquery.fancybox.min.css' %}" media="screen">
     
     
-    {% block title %}        
-    {% endblock title %}
+    {% block title_head %}   {% endblock title_head %}
 </head>
 <body>
     {% block body %}{% endblock body %}
-    <!--===============================================================================================-->
-	<script src="{% static 'appointment/js/jquery.js' %}"></script>
-    <!--===============================================================================================-->
-    <!--===============================================================================================-->
-        <script src="{% static 'appointment/js/bootstrap.js' %}"></script>
-        <script src="{% static 'appointment/js/bootstrap.min.js' %}"></script>
-        <script src="{% static 'appointment/js/main.js' %}"></script>
-        <script src="{% static 'appointment/js/respond.min.js' %}"></script>
+
+    <!-- copyright section end -->
+   <!-- Javascript files-->
+
+   <script src="{% static 'appointment/js/jquery.min.js' %}"></script>
+   <script src="{% static 'appointment/js/popper.min.js' %}"></script>
+   <script src="{% static 'appointment/js/bootstrap.bundle.min.js' %}"></script>
+   <script src="{% static 'appointment/js/jquery-3.0.0.min.js' %}"></script>
+   <script src="{% static 'appointment/js/plugin.js' %}"></script>
+   
+   <!-- sidebar -->
+   <script src="{% static 'appointment/js/jquery.mCustomScrollbar.concat.min.js' %}"></script>
+   <script src="{% static 'appointment/js/custom.js' %}"></script>
+   <!-- javascript -->
+   {% comment %} <script src="{% static 'appointment/js/owl.carousel.js' %}"></script> {% endcomment %}
+   <script src="{% static 'appointment/js/jquery.fancybox.min.js' %}"></script>
 </body>
 </html>
