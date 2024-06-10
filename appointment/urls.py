@@ -1,8 +1,8 @@
 from django.urls import path
-from .views import appointment_view
+from . import views
 app_name = "appointment"
 
 urlpatterns = [
-    
-    path('',appointment_view,name="appointment"),
+    path('',views.appointment_view,name="appointment"),
+    path('appointment_for_eegSignal/',views.appointment_for_eegSignal,name="eeg-signal")
 ]
