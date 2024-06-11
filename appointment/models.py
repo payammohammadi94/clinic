@@ -98,13 +98,13 @@ class AppointmentModel(models.Model):
     year = models.IntegerField(choices = YEARS_CHOICES,verbose_name="تاریخ سال")
     
     
-    time = models.ManyToManyField(TimesVisitModel,related_name='times',verbose_name="زمان های ویزیت")
+    time = models.ManyToManyField(TimesVisitModel,related_name='times',verbose_name="زمان های ویزیت",blank=True,null=True)
     
     create = models.DateTimeField(auto_now = True)
     
     def __str__(self):
         return str(self.weeks_day) + "- (" + str(self.day) +"-"+str(self.month)+"-"+str(self.year) + ")"
-
+    
     def count_time(self):
         return self.time.count()
     

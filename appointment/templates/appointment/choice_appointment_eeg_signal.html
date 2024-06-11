@@ -1,0 +1,32 @@
+{% extends "appointment/base.html" %}
+{% load static %}
+{% block title_head %}  <title>خانه</title> {% endblock title_head %}
+
+
+{% block body %}
+<!-- header section start -->
+<div class="header_section">
+{% include "./header.html" %}
+{% include "./banner.html" %}
+
+</div>
+   <!-- health section start -->
+<div>
+   
+   <h5 class="card-title">{{data.weeks_day}}</h5>
+   <h5 class="card-title"><span>{{data.year}}/{{data.month}}/{{data.day}}</span></h5>
+   <h5 class="card-title"></h5>
+   <h5 class="card-title"></h5>
+   <h5 class="card-title">{{data.create}}</h5>
+   
+   {% for time in times %}
+      <div class="card" style="width: 18rem;">
+         
+         <h5 class="card-title">{{time.time}}</h5>
+
+      </div>
+   {% endfor %}
+</div>
+
+{% endblock body %}
+</html>

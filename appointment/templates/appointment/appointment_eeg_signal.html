@@ -18,7 +18,7 @@
         <h5 class="card-title">{{data.weeks_day}}</h5>
         <h6 class="card-subtitle mb-2 text-muted"><span>{{data.year}}/{{data.month}}/{{data.day}}</span></h6>
         <p class="card-text">{{data.count_time}}</p>
-        <a href="#" class="card-link">Card link</a>
+        <a href="{% url 'appointment:choice' data.id %}" class="card-link">Card link</a>
         <a href="#" class="card-link">Another link</a>
       </div>
     </div>
